@@ -1,0 +1,223 @@
+.bg-room {
+  background: url("/images/Chats.png");
+  height: 100%;
+  width: 100%;
+}
+.nameForms {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nameForm {
+  max-width: 400px;
+  width: 100%;
+  margin: 0px auto;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nameForm input {
+  padding: 10px 25px;
+  border: none;
+  font-weight: 500;
+  outline: none;
+}
+.btn-form {
+  background: #3f51b5;
+  padding: 10px 25px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+}
+
+/* room */
+.room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.aside {
+  height: 100%;
+  flex-basis: 280px;
+  background: rgb(255 255 255);
+  padding: 24px 12px;
+  overflow: auto;
+}
+
+.canvas {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner_canvas {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.public_rooms {
+  height: 40%;
+  width: 100%;
+  background: #fff;
+  overflow: auto;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: unset;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bcc0c4;
+  border-radius: 5px;
+  display: none;
+  transition: 0.3s;
+}
+.public_rooms:hover::-webkit-scrollbar-thumb {
+  display: block;
+}
+
+.online_users {
+  height: 60%;
+  width: 100%;
+}
+
+.message_head {
+  flex-basis: 60px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 19px 28px;
+}
+
+.message_container {
+  flex-grow: 1;
+}
+
+.message_form {
+  margin: 30px 35px;
+}
+
+.name {
+  width: 300px;
+  margin: 20px auto;
+}
+
+.list-group-item {
+  position: relative;
+}
+
+.onLine::after {
+  position: absolute;
+  left: 9px;
+  bottom: 14px;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #00df81;
+  border-radius: 50%;
+}
+.onLineRoom::after {
+  position: absolute;
+  left: -14px;
+  bottom: 7px;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #00df81;
+  border-radius: 50%;
+}
+
+.messages {
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.plus_icon {
+  cursor: pointer;
+  background: #3f51b5;
+  color: white !important;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.room_title,
+.online_user_title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.user_list {
+  margin: 6px 0px;
+  background: #f2f2f2;
+  border: none !important;
+  border-radius: 5px !important;
+}
+
+#msg_form {
+  background: white;
+  border: none !important;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+#msg_form input {
+  border: none !important;
+  outline: none !important;
+}
+.btn_msg {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+.btn_msg span {
+  color: #3f51b5;
+  font-size: 30px;
+}
+.send_message {
+  width: 400px;
+  margin: 20px 36px;
+  font-weight: 500;
+  border: none !important;
+  border-radius: 5px !important;
+}
+
+.user {
+  width: 40px;
+  height: 40px;
+}
+.accordion {
+  border-radius: 5px;
+  padding: 0px 3px;
+}
+.accordion-item {
+  margin: 10px 0px;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+.accordion-button {
+  background: none !important;
+  font-weight: 500;
+}
