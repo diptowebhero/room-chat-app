@@ -88,7 +88,7 @@ socket.on("receive_message", (data, senderId) => {
     msgEmpty.classList.add("d-none");
   } else {
     openCanvas(sender);
-    msgForm[1].dataset.room = true;
+    msgForm[1].dataset.room = false;
   }
   const li = document.createElement("li");
   li.classList.add("list-group-item");
