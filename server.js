@@ -133,6 +133,6 @@ io.on("connection", (socket) => {
 });
 
 //listening port 500
-expressServer.listen(5000, () => {
+expressServer.listen(process.env.PORT || 5000, () => {
   console.log("Server is running successfully");
 });
