@@ -126,9 +126,9 @@ io.on("connection", (socket) => {
   //leave room
   socket.on("leave_room", async (roomName, cb) => {
     socket.leave(roomName);
-    cb();
     const publicRoom = await getPublicRooms();
     io.emit("get_public_room", publicRoom);
+    cb();
   });
 });
 
